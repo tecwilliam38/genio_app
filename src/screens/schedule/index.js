@@ -29,9 +29,7 @@ function Schedule(props) {
                 props.navigation.navigate('Main');
             }
             else {
-                Alert.alert("Data indisponível",
-                    setSelectedDate(""),
-                    setSelectedHour(""));
+                Alert.alert("Data indisponível",setSelectedDate(""),setSelectedHour(""));
             }
         } catch (error) {
             if (error.response?.data.error)
