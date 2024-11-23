@@ -26,10 +26,12 @@ function Schedule(props) {
                 booking_hour: selectedHour
             });
             if (response.data?.id_appointment) {
-                props.navigation.navigate('Main');                
+                props.navigation.navigate('Main');
             }
             else {
-                Alert.alert("Data indisponível", setSelectedDate(""), setSelectedHour(""));
+                Alert.alert("Data indisponível",
+                    setSelectedDate(""),
+                    setSelectedHour(""));
             }
         } catch (error) {
             if (error.response?.data.error)
