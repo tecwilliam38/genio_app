@@ -1,0 +1,25 @@
+import { COLORS, FONT_SIZE } from "../../constants/theme.js";
+
+export const ButtonStyles = {
+    btn: {
+        width: "100%",
+        borderRadius: 6,
+        padding: 12,    
+        borderRadius:12,            
+    },
+    primary: {
+        backgroundColor: COLORS.red,
+        marginBottom:10,
+    },
+    danger: {
+        backgroundColor: COLORS.red1,
+        marginBottom:10,
+    },
+    text: {
+        color: "#fff",
+        fontSize: FONT_SIZE.md,
+        textAlign: "center",
+        fontWeight:"bold",
+    }
+
+}
